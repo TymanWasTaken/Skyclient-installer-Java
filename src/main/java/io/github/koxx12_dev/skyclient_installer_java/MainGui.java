@@ -29,11 +29,11 @@ public class MainGui extends Utils {
 
     public static void main(String[] args) throws IOException, URISyntaxException {
 
-        if (!System.getProperty("java.version").startsWith("1.8")) {
-            JOptionPane.showMessageDialog(null, "Ur using a wrong version of java\nu be using should 1.8 not "+System.getProperty("java.version"), "ERROR", JOptionPane.ERROR_MESSAGE);
-            java.awt.Desktop.getDesktop().browse(new URI("https://adoptopenjdk.net/?variant=openjdk8&jvmVariant=hotspot"));
-            System.exit(0);
-        }
+        // if (!System.getProperty("java.version").startsWith("1.8")) {
+        //     JOptionPane.showMessageDialog(null, "Ur using a wrong version of java\nu be using should 1.8 not "+System.getProperty("java.version"), "ERROR", JOptionPane.ERROR_MESSAGE);
+        //     java.awt.Desktop.getDesktop().browse(new URI("https://adoptopenjdk.net/?variant=openjdk8&jvmVariant=hotspot"));
+        //     System.exit(0);
+        // }
 
         LafManager.enableLogging(false);
         LafManager.install(new DarculaTheme());
